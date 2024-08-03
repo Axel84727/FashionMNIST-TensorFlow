@@ -17,7 +17,7 @@ La estructura del proyecto es la siguiente:
 - **`scripts/`**: Contiene scripts para la visualización de los resultados.
   - `plot_utils.py`: Funciones para visualizar imágenes y gráficas de predicciones.
 - **`utils/`**: (Opcional) Utilidades generales para el proyecto.
-- **`main.py`**: Archivo principal para ejecutar el flujo del proyecto.
+- **`main.py`**: Archivo principal en el que se puede ejecutar para ver el funcionamiento del codigo (independiente de otros archivos).
 - **`README.md`**: Este archivo, que proporciona una visión general del proyecto.
 
 ## Requisitos
