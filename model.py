@@ -1,3 +1,4 @@
+#1----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Importamos la biblioteca de Python llamada TensorFlow, que se utiliza para construir y entrenar modelos de aprendizaje automático y redes neuronales.
 import tensorflow as tf
 
@@ -12,7 +13,9 @@ import matplotlib.pyplot as plt
 
 # Importamos la función load_data desde el archivo load_data.py
 from load_data import load_data
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+#7----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 def create_model():
     """
     Define y compila un modelo de red neuronal para clasificar imágenes de moda.
@@ -42,8 +45,10 @@ def create_model():
                   metrics=['accuracy'])
     
     return model
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-def train_model(train_images, train_labels):
+#8----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+def train_model(train_images, train_labels, epochs=5):
     """
     Entrena el modelo con el conjunto de datos de entrenamiento.
     """
@@ -52,18 +57,28 @@ def train_model(train_images, train_labels):
     
     # Entrenamos el modelo usando los datos de entrenamiento.
     # 'epochs' indica el número de veces que el modelo pasará por todo el conjunto de datos.
-    model.fit(train_images, train_labels, epochs=5)
+    model.fit(train_images, train_labels, epochs=epochs)
     
     return model
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+#9----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Código para ejecutar el entrenamiento si se ejecuta este archivo directamente.
 if __name__ == "__main__":
+    import argparse
+
+    # Definimos el argumento para el número de épocas desde la línea de comandos.
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--epochs', type=int, default=5, help='Número de épocas para entrenar el modelo')
+    args = parser.parse_args()
+
     # Cargamos los datos.
     train_images, train_labels, test_images, test_labels = load_data()
     
     # Entrenamos el modelo.
-    model = train_model(train_images, train_labels)
+    model = train_model(train_images, train_labels, epochs=args.epochs)
     
     # Guardamos el modelo entrenado.
     model.save('fashion_mnist_model.h5')
     print("Modelo guardado como 'fashion_mnist_model.h5'")
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
