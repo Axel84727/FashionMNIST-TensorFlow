@@ -68,7 +68,8 @@ pip install tensorflow numpy matplotlib
    python main.py
    ```
 
-2. Notebook de Google Colab
+2. Notebook de Google Colab [https://colab.research.google.com/drive/1EKLBVsJBdADGAThi-R3LZzDI5LyIGFRi?usp=sharing](https://colab.research.google.com/drive/1EKLBVsJBdADGAThi-R3LZzDI5LyIGFRi?usp=sharing)
+   
 
 ## Contribuciones
 
