@@ -2,7 +2,7 @@
 predictions = model.predict(test_images)
 
 # Seleccionamos una imagen específica del conjunto de prueba para mostrar cómo el modelo la clasifica.
-img = test_images[0]
+img = test_images[0] #debes cambiar '0' por el valor de la imagen de prueba que desees (recuerda que deben estar en un rango de 0-10000)
 
 # Imprimimos la forma del array de la imagen para ver sus dimensiones.
 print(img.shape)
@@ -22,7 +22,7 @@ print(predictions_single)
 # Encontramos la etiqueta con la mayor probabilidad en las predicciones.
 print(np.argmax(predictions_single[0]))
 
-i = 0
+i = 0 #debes cambiar '0' por el valor de la imagen de prueba que desees (recuerda que deben estar en un rango de 0-10000)
 plt.figure(figsize=(6,3))  # Define el tamaño de la figura.
 plt.subplot(1,2,1)  # Crea un subplot para la imagen.
 plot_image(i, predictions[i], test_labels, test_images, class_names)
