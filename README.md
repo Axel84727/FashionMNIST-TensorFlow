@@ -86,7 +86,7 @@ Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENS
 
 ## Contacto
 
-Para preguntas o comentarios, por favor contacta a [tu_correo@dominio.com](mailto:tu_correo@dominio.com).
+Para preguntas o comentarios, por favor contacta a [udontknow121@proton.me](mailto:udontknow121@proton.me).
 
 ## Recursos Adicionales
 
