@@ -1,12 +1,21 @@
-    from tensorflow import keras
-    """
-    Define y compila un modelo de red neuronal para clasificar imágenes de moda.
-    """
-    def create_model():
+# Importamos la biblioteca de Python llamada TensorFlow, que se utiliza para construir y entrenar modelos de aprendizaje automático y redes neuronales.
+import tensorflow as tf
+from tensorflow import keras
+
+# Importamos la biblioteca NumPy para operaciones numéricas.
+import numpy as np
+
+# Importamos la biblioteca Matplotlib para la visualización de datos.
+import matplotlib.pyplot as plt
+
+"""
+Define y compila un modelo de red neuronal para clasificar imágenes de moda.
+"""
+def create_model():
     # Creamos un modelo secuencial, que es una pila lineal de capas.
     model = keras.Sequential([
         # La primera capa aplana la imagen de 28x28 píxeles a un vector de 784 elementos.
-        # Esto convierte la imagen en una entrada unidimensional (una unica dimesion) para las siguientes capas densas.
+        # Esto convierte la imagen en una entrada unidimensional para las siguientes capas densas.
         keras.layers.Flatten(input_shape=(28, 28)),
         
         # Añadimos una capa densa con 128 neuronas y función de activación ReLU.
@@ -26,13 +35,22 @@
                   loss='sparse_categorical_crossentropy',
                   metrics=['accuracy'])
     
-    #utilizamos la funcion .fit para entrenar el modelo con los cojuntos; train_images, train_labels 
-        model.fit(train_images, train_labels, epochs=5)
-    #las epochs son la cantidad de vueltas que da un modelo por los datos de entrenamiento (puedes elegir el numero que desees) toma en cuenta que mientras mas sean, mas va a tardar.
     return model
 
+def train_model(train_images, train_labels):
+    # Crear el modelo.
+    model = create_model()
+    
+    # Entrenamos el modelo con el conjunto de entrenamiento.
+    # Las epochs son la cantidad de vueltas que da el modelo sobre los datos de entrenamiento.
+    model.fit(train_images, train_labels, epochs=5)
+    
+    # Guardamos el modelo entrenado para su uso futuro.
+    model.save('fashion_mnist_model.h5')
+    
+    return model
 
-    # Código para ejecutar el entrenamiento si se ejecuta este archivo directamente.
+# Código para ejecutar el entrenamiento si se ejecuta este archivo directamente.
 if __name__ == "__main__":
     # Importamos las funciones para cargar datos.
     from load_data import load_data
