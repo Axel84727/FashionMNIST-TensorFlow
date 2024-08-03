@@ -13,7 +13,7 @@ Implementación de un modelo de clasificación de imágenes con TensorFlow y Ker
 ## Instalación
 1. Clona este repositorio:
     ```bash
-    git clone https://github.com/tu-usuario/FashionMNIST-Classifier.git
+    git clone https://github.com/Axel84727/FashionMNIST-TensorFlow.git
     ```
 2. Instala las dependencias:
     ```bash
