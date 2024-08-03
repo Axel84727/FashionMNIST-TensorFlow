@@ -2,6 +2,7 @@
     """
     Define y compila un modelo de red neuronal para clasificar imágenes de moda.
     """
+    def create_model():
     # Creamos un modelo secuencial, que es una pila lineal de capas.
     model = keras.Sequential([
         # La primera capa aplana la imagen de 28x28 píxeles a un vector de 784 elementos.
@@ -28,3 +29,4 @@
     #utilizamos la funcion .fit para entrenar el modelo con los cojuntos; train_images, train_labels 
         model.fit(train_images, train_labels, epochs=5)
     #las epochs son la cantidad de vueltas que da un modelo por los datos de entrenamiento (puedes elegir el numero que desees) toma en cuenta que mientras mas sean, mas va a tardar.
+    return model
