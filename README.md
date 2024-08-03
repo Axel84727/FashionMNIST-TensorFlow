@@ -113,4 +113,7 @@ Consulta la documentación oficial de TensorFlow y Keras para obtener más infor
 ---
 
 ¡Gracias por visitar el proyecto! Esperamos que encuentres útil esta implementación para tus propósitos de aprendizaje y desarrollo.
-```
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
