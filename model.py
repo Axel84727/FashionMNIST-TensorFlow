@@ -1,14 +1,5 @@
-
-# Importamos TensorFlow y Keras para construir y definir el modelo de red neuronal.
-import tensorflow as tf
-from tensorflow import keras
-
-def create_model():
     """
     Define y compila un modelo de red neuronal para clasificar imágenes de moda.
-    
-    Returns:
-        model: Un modelo de red neuronal compilado listo para ser entrenado.
     """
     # Creamos un modelo secuencial, que es una pila lineal de capas.
     model = keras.Sequential([
@@ -33,4 +24,6 @@ def create_model():
                   loss='sparse_categorical_crossentropy',
                   metrics=['accuracy'])
     
-    return model
+    #utilizamos la funcion .fit para entrenar el modelo con los cojuntos; train_images, train_labels 
+        model.fit(train_images, train_labels, epochs=5)
+    #las epochs son la cantidad de vueltas que da un modelo por los datos de entrenamiento (puedes elegir el numero que desees) toma en cuenta que mientras mas sean, mas va a tardar.
