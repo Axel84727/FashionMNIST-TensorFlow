@@ -84,10 +84,6 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 
 Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
-## Contacto
-
-Para preguntas o comentarios, por favor contacta a [udontknow121@proton.me](mailto:udontknow121@proton.me).
-
 ## Recursos Adicionales
 
 - **TensorFlow Documentation:** [https://www.tensorflow.org/overview](https://www.tensorflow.org/overview)
