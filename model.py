@@ -56,7 +56,6 @@ def train_model(train_images, train_labels):
 # Código para ejecutar el entrenamiento si se ejecuta este archivo directamente.
 if __name__ == "__main__":
     # Importamos las funciones para cargar datos.
-    from load_data import load_data
     
     # Cargamos los datos.
     train_images, train_labels, test_images, test_labels = load_data()
