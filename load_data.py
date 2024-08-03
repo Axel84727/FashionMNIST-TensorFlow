@@ -52,29 +52,3 @@ train_images = train_images / 255.0
 test_images = test_images / 255.0
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#indice
-Importación de Bibliotecas:
-
-    TensorFlow y Keras para el aprendizaje automático.
-    NumPy para cálculos matemáticos.
-    Matplotlib para visualización.
-
-Impresión de la Versión de TensorFlow:
-
-    Verificación de la instalación.
-
-Carga del Dataset Fashion MNIST:
-
-    Incluye 60,000 imágenes para entrenamiento y 10,000 para prueba.
-
-División de Datos:
-
-    Conjunto de entrenamiento y conjunto de prueba.
-
-Definición de Nombres de Clases:
-
-    Nombres de las categorías de ropa.
-
-Normalización de Imágenes:
-
-    Escala de valores de 0 a 1 para mejorar el rendimiento del modelo.
