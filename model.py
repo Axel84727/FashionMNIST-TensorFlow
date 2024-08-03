@@ -8,10 +8,11 @@ import numpy as np
 # Importamos la biblioteca Matplotlib para la visualización de datos.
 import matplotlib.pyplot as plt
 
-"""
-Define y compila un modelo de red neuronal para clasificar imágenes de moda.
-"""
 def create_model():
+    """
+    Define y compila un modelo de red neuronal para clasificar imágenes de moda.
+    Retorna el modelo compilado.
+    """
     # Creamos un modelo secuencial, que es una pila lineal de capas.
     model = keras.Sequential([
         # La primera capa aplana la imagen de 28x28 píxeles a un vector de 784 elementos.
@@ -19,7 +20,7 @@ def create_model():
         keras.layers.Flatten(input_shape=(28, 28)),
         
         # Añadimos una capa densa con 128 neuronas y función de activación ReLU.
-        # La activación ReLU introduce no linealidad en el modelo permitiendo al modelo salir de las operaciones lineales.
+        # La activación ReLU introduce no linealidad en el modelo permitiendo al modelo aprender patrones complejos.
         keras.layers.Dense(128, activation='relu'),
         
         # Añadimos la capa de salida con 10 neuronas (una por cada clase en Fashion MNIST).
@@ -38,15 +39,15 @@ def create_model():
     return model
 
 def train_model(train_images, train_labels):
-    # Crear el modelo.
+    """
+    Entrena el modelo con el conjunto de datos de entrenamiento.
+    """
+    # Creamos el modelo.
     model = create_model()
     
-    # Entrenamos el modelo con el conjunto de entrenamiento.
-    # Las epochs son la cantidad de vueltas que da el modelo sobre los datos de entrenamiento.
+    # Entrenamos el modelo usando los datos de entrenamiento.
+    # 'epochs' indica el número de veces que el modelo pasará por todo el conjunto de datos.
     model.fit(train_images, train_labels, epochs=5)
-    
-    # Guardamos el modelo entrenado para su uso futuro.
-    model.save('fashion_mnist_model.h5')
     
     return model
 
@@ -60,3 +61,7 @@ if __name__ == "__main__":
     
     # Entrenamos el modelo.
     model = train_model(train_images, train_labels)
+    
+    # Guardamos el modelo entrenado.
+    model.save('fashion_mnist_model.h5')
+    print("Modelo guardado como 'fashion_mnist_model.h5'")
