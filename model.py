@@ -1,11 +1,13 @@
 # Importamos la biblioteca de Python llamada TensorFlow, que se utiliza para construir y entrenar modelos de aprendizaje automático y redes neuronales.
 import tensorflow as tf
+
+# Importamos la biblioteca de Keras desde TensorFlow. Keras es una API de alto nivel para construir y entrenar modelos de aprendizaje profundo de manera sencilla.
 from tensorflow import keras
 
-# Importamos la biblioteca NumPy para operaciones numéricas.
+# Importamos la biblioteca NumPy para operaciones numéricas. Es útil para manejar arrays y realizar operaciones matemáticas.
 import numpy as np
 
-# Importamos la biblioteca Matplotlib para la visualización de datos.
+# Importamos la biblioteca Matplotlib para la visualización de datos. Nos permite crear gráficos y visualizar imágenes.
 import matplotlib.pyplot as plt
 
 def create_model():
