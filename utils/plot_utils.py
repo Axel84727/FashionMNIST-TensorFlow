@@ -1,3 +1,5 @@
+#ESTE ARCHIVO ES COMPLETAMENTE OPCIONAL PARA LA FUNCION PRINCIPAL DEL CODIGO, nos permite ejecutar otras lineas de codigo (te recomiendo que lo ejecutes)
+
 # Definimos una función para mostrar la imagen con la predicción del modelo y la etiqueta real.
 def plot_image(i, predictions_array, true_label, img, class_names):
     predictions_array, true_label, img = predictions_array, true_label[i], img[i]
