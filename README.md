@@ -69,7 +69,7 @@ pip install tensorflow numpy matplotlib
    ```
 
 2. Notebook de Google Colab
-   [https://colab.research.google.com/drive/1EKLBVsJBdADGAThi-R3LZzDI5LyIGFRi?usp=sharing](https://colab.research.google.com/drive/1EKLBVsJBdADGAThi-R3LZzDI5LyIGFRi?usp=sharing)
+
    donde se puede testear y ver el funcionamiento del codigo. 
 
 ## Contribuciones
