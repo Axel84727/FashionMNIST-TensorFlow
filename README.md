@@ -1,26 +1,11 @@
-# FashionMNIST-Classifier
+# Fashion MNIST Project
 
-## Descripción
-Implementación de un modelo de clasificación de imágenes con TensorFlow y Keras usando el dataset Fashion MNIST. Clasifica ropa en 10 categorías: T-shirt/top, Trouser, Pullover, Dress, Coat, Sandal, Shirt, Sneaker, Bag, Ankle boot.
+Este proyecto utiliza el dataset Fashion MNIST para construir, entrenar y evaluar un modelo de clasificación de imágenes.
 
-## Tabla de Contenidos
-- [Instalación](#instalación)
-- [Uso](#uso)
-- [Estructura del Proyecto](#estructura-del-proyecto)
-- [Contribuir](#contribuir)
-- [Licencia](#licencia)
+## Estructura del Proyecto
 
-## Instalación
-1. Clona este repositorio:
-    ```bash
-    git clone https://github.com/Axel84727/FashionMNIST-TensorFlow.git
-    ```
-2. Instala las dependencias:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-## Uso
-Para entrenar el modelo:
-```bash
-python models/model.py
+- **data/**: Contiene scripts para cargar y preprocesar datos.
+- **model/**: Contiene scripts para construir, entrenar y evaluar el modelo.
+- **scripts/**: Contiene utilidades para la visualización y otras tareas.
+- **utils/**: Utilidades generales (opcional).
+- **main.py**: Archivo principal para ejecutar el flujo del proyecto.
