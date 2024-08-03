@@ -30,3 +30,15 @@
         model.fit(train_images, train_labels, epochs=5)
     #las epochs son la cantidad de vueltas que da un modelo por los datos de entrenamiento (puedes elegir el numero que desees) toma en cuenta que mientras mas sean, mas va a tardar.
     return model
+
+
+    # Código para ejecutar el entrenamiento si se ejecuta este archivo directamente.
+if __name__ == "__main__":
+    # Importamos las funciones para cargar datos.
+    from load_data import load_data
+    
+    # Cargamos los datos.
+    train_images, train_labels, test_images, test_labels = load_data()
+    
+    # Entrenamos el modelo.
+    model = train_model(train_images, train_labels)
