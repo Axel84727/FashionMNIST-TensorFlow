@@ -1,3 +1,4 @@
+    from tensorflow import keras
     """
     Define y compila un modelo de red neuronal para clasificar imágenes de moda.
     """
