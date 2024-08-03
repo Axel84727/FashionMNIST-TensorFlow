@@ -10,6 +10,9 @@ import numpy as np
 # Importamos la biblioteca Matplotlib para la visualización de datos. Nos permite crear gráficos y visualizar imágenes.
 import matplotlib.pyplot as plt
 
+# Importamos la función load_data desde el archivo load_data.py
+from load_data import load_data
+
 def create_model():
     """
     Define y compila un modelo de red neuronal para clasificar imágenes de moda.
@@ -55,8 +58,6 @@ def train_model(train_images, train_labels):
 
 # Código para ejecutar el entrenamiento si se ejecuta este archivo directamente.
 if __name__ == "__main__":
-    # Importamos las funciones para cargar datos.
-    
     # Cargamos los datos.
     train_images, train_labels, test_images, test_labels = load_data()
     
