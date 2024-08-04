@@ -1,4 +1,4 @@
-Aquí tienes una versión extendida del `README.md` con más detalles:
+
 
 ```markdown
 # Fashion MNIST Classifier
